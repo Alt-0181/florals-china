@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>จับรางวัลผู้โชคดี</title> <!-- "Lucky Draw" in Thai -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="winnerBoard">
+            <h2>ประกาศรายชื่อผู้โชคดี</h2> <!-- "Winners" in Thai -->
+            <ul id="winnerList"></ul>
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="startButton" onclick="startLuckyDraw()">เริ่มจับรางวัล</button> <!-- "Start Lucky Draw" in Thai -->
+        <button id="exportButton" onclick="exportAsImage()">บันทึกเป็นภาพ</button> <!-- "Save as Image" in Thai -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

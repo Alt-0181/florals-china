@@ -1,0 +1,102 @@
+body {
+    font-family: 'DB Helvethaica', sans-serif;
+    background-color: #f5f7fb;
+    background-attachment: fixed;
+    background-position: left center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'DB Helvethaica', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-image: url(BG.jpg); /* Ensure this is set to the desired background image */
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100vw;
+    height: 1350px;
+    max-width: 1080px;
+    padding: 200px 60px 20px 20px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 5em;
+    padding-top: 20px;
+    color: #f5f7fb;
+    margin-bottom: 100px;
+}
+
+#winnerBoard {
+    margin-top: 50px;
+}
+
+#winnerList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    grid-template-rows: repeat(3, auto) auto; /* 3 rows for the first 6 items, 1 row for the last item */
+    gap: 70px; /* Space between items */
+    justify-content: center; /* Center grid content */
+    list-style-type: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#winnerList li {
+    font-size: 2.5em;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 1px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px; /* Consistent height for all items */
+    width: 100%; /* Let grid system manage width */
+}
+
+/* Center and style the last winner (7th) */
+#winnerList li:nth-child(7) {
+    grid-column: 1 / 3; /* Spans two columns */
+    justify-self: center; /* Center align within the row */
+    width: calc(50% - 50px); /* Match the width of the other boxes */
+    height: 70px; /* Consistent height */
+}
+
+
+.button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #4c4744;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #4c4744;
+}
+
+@font-face {
+    font-family: 'DB Helvethaica';
+    src: url('fonts/DB Helvethaica X Bd Cond v3.2.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
